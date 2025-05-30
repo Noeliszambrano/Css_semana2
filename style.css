@@ -1,0 +1,76 @@
+/* Selector with specificity */
+div {
+    color: blue;  
+}
+
+.highlight {
+    color: rgb(17, 0, 255);
+}
+
+#special {
+    color: rgb(167, 19, 135);
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.box{
+    background-color: #ffffff;
+    border: 2px solid #000;
+    box-shadow: 5px 5px 10px rgba(23, 10, 145, 0.5);
+    padding: 20px;
+    margin: 10px;
+}
+
+.content {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    border: 5px solid #be0e0e;
+}
+
+.inline-block {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(53, 6, 10);
+}
+
+.firex-box {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(110, 182, 62);
+    padding: 10px;
+}
+
+.rotate-box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(133, 18, 133);
+    transform: rotate(45deg);
+}
+
+a:hover {
+    color: rgb(84, 45, 146);
+    text-decoration: underline;
+}
+
+.box::before {
+    content: "new!";
+    color: rgb(25, 122, 114);
+    font-weight: bold;
+}
+
+.fade-in {
+    animation: fade 2s ease-in-out;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
